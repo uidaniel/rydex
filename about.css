@@ -708,6 +708,13 @@ section {
   flex-shrink: 0;
 }
 
+.about-txt {
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+}
+
 /* ── FOOTER ── */
 footer {
   background: var(--black);
@@ -813,6 +820,19 @@ footer nav a:hover {
   }
   nav .nav-links {
     display: none;
+  }
+  .nav-cta {
+    display: none;
+  }
+  .about-txt {
+    display: flex;
+    font-size: 0.88rem;
+    font-weight: 300;
+    animation: fadeUp 0.7s 0.2s ease both;
+  }
+  .about-txt:hover {
+    cursor: pointer;
+    color: var(--green-accent);
   }
 }
 @media (max-width: 600px) {

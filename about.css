@@ -170,7 +170,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 6rem 5% 6rem;
+  padding: 0 5% 6rem;
   position: relative;
   overflow: hidden;
 }

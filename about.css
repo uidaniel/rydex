@@ -170,7 +170,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 5% 6rem;
+  padding: 6rem 5% 6rem;
   position: relative;
   overflow: hidden;
 }
@@ -237,7 +237,7 @@ nav {
   animation: fadeUp 0.6s ease 0.3s forwards;
 }
 .about-hero h1 {
-  font-size: clamp(3rem, 7vw, 4.5rem);
+  font-size: clamp(2rem, 7vw, 3.5rem);
   font-weight: 800;
   letter-spacing: -2px;
   line-height: 1;

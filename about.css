@@ -151,6 +151,12 @@ nav {
   box-shadow: 0 6px 20px rgba(255, 224, 53, 0.35);
 }
 
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 /* Hamburger toggle (mobile only) */
 .nav-toggle {
   display: none;

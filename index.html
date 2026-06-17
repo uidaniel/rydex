@@ -21,19 +21,29 @@
     <!-- NAV -->
 
     <nav id="navbar">
-      <a href="#" class="nav-logo">
-        <img src="./image/logo.png" class="logo" alt="" />
+      <a href="#home" class="nav-logo">
+        <img src="./image/logo.png" class="logo" alt="Rydex" />
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#how">How It Works</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#driver">Drive</a></li>
         <li><a href="#coverage">Coverage</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-btn">
-        <a href="about.html" class="about-txt">About Us</a>
         <a href="#download" class="nav-cta">Get the App</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
 
@@ -246,16 +256,8 @@
         </div>
         <div class="hero-stats">
           <div>
-            <div class="hero-stat-num">2 min</div>
-            <div class="hero-stat-label">Avg. pickup time</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">500+</div>
+            <div class="hero-stat-num">60+</div>
             <div class="hero-stat-label">Active riders</div>
-          </div>
-          <div>
-            <div class="hero-stat-num">4.8★</div>
-            <div class="hero-stat-label">Driver rating avg.</div>
           </div>
         </div>
 
@@ -333,12 +335,12 @@
       <div class="problem-grid" style="margin-top: 4rem">
         <div class="problem-cards reveal">
           <div class="problem-card">
-            <div class="problem-icon">⏳</div>
+            <div class="problem-icon">🚫</div>
             <div>
-              <h4>Endless Waiting</h4>
+              <h4>Nothing Available</h4>
               <p>
-                Standing on the road hoping a keke or cab shows up — sometimes
-                for 20, 30+ minutes with no guarantee.
+                Rush hour, rain, or late at night — exactly when you need a ride
+                most, there's not a single one in sight.
               </p>
             </div>
           </div>
@@ -603,6 +605,14 @@
             after the standard settlement period.
           </p>
         </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon-wrap">👥</div>
+          <h3>Shared Rides</h3>
+          <p>
+            Heading the same way? Split the trip and the fare with others going
+            your route — cheaper rides for you, fewer cars on the road.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -858,46 +868,6 @@
               </div>
             </div>
           </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "I feel so much safer knowing my driver is verified. My mum was
-              worried about me using random cabs at night — now I just share my
-              trip on Rydex and she's calm."
-            </p>
-            <div class="testi-author">
-              <div
-                class="testi-avatar"
-                style="background: linear-gradient(135deg, #119001, #18cd02)"
-              >
-                BI
-              </div>
-              <div>
-                <div class="testi-name">Blessing I.</div>
-                <div class="testi-role">100L Law, OAU</div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "I started driving with Rydex part-time. The wallet feature is
-              clean, I know exactly what I've earned, and the withdrawal is
-              smooth. Recommended to all my driver friends."
-            </p>
-            <div class="testi-author">
-              <div
-                class="testi-avatar"
-                style="background: linear-gradient(135deg, #0a6400, #119001)"
-              >
-                SO
-              </div>
-              <div>
-                <div class="testi-name">Seun O.</div>
-                <div class="testi-role">Rydex Driver, Ile-Ife</div>
-              </div>
-            </div>
-          </div>
           <!-- Set 2 (duplicate for infinite scroll) -->
           <div class="testi-card">
             <div class="testi-stars">★★★★★</div>
@@ -956,46 +926,6 @@
               <div>
                 <div class="testi-name">Timi K.</div>
                 <div class="testi-role">Postgrad Student, OAU</div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "I feel so much safer knowing my driver is verified. My mum was
-              worried about me using random cabs at night — now I just share my
-              trip on Rydex and she's calm."
-            </p>
-            <div class="testi-author">
-              <div
-                class="testi-avatar"
-                style="background: linear-gradient(135deg, #119001, #18cd02)"
-              >
-                BI
-              </div>
-              <div>
-                <div class="testi-name">Blessing I.</div>
-                <div class="testi-role">100L Law, OAU</div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "I started driving with Rydex part-time. The wallet feature is
-              clean, I know exactly what I've earned, and the withdrawal is
-              smooth. Recommended to all my driver friends."
-            </p>
-            <div class="testi-author">
-              <div
-                class="testi-avatar"
-                style="background: linear-gradient(135deg, #0a6400, #119001)"
-              >
-                SO
-              </div>
-              <div>
-                <div class="testi-name">Seun O.</div>
-                <div class="testi-role">Rydex Driver, Ile-Ife</div>
               </div>
             </div>
           </div>
@@ -1321,114 +1251,68 @@
     </section>
 
     <!-- FOOTER -->
-    <!-- <footer style="position: relative; overflow: hidden">
-      <svg
-        style="
-          position: absolute;
-          bottom: -60px;
-          right: -60px;
-          width: 280px;
-          height: 280px;
-          pointer-events: none;
-          z-index: 0;
-          opacity: 0.5;
-        "
-        viewBox="0 0 280 280"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="280"
-          cy="280"
-          r="200"
-          stroke="#18CD02"
-          stroke-width="0.5"
-          opacity="0.08"
-        />
-        <circle
-          cx="280"
-          cy="280"
-          r="140"
-          stroke="#FFE035"
-          stroke-width="0.4"
-          opacity="0.05"
-        />
-        <circle
-          cx="280"
-          cy="280"
-          r="80"
-          stroke="#18CD02"
-          stroke-width="0.4"
-          opacity="0.07"
-        />
-      </svg>
+
+    <footer class="site-footer">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo">
-            <div class="footer-logo-pill">
-              <div class="footer-logo-slashes">
-                <span></span><span></span><span></span>
-              </div>
-            </div>
-            <span class="footer-logo-wordmark">RYDEX</span>
-          </div>
+          <a href="index.html" class="footer-logo-wrap">
+            <img src="./image/logo.png" class="footer-logo-img" alt="Rydex" />
+          </a>
           <p>
             Reliable rides for Ile-Ife. Built for students, residents, and
-            everyone in between. Available across OAU and the city.
+            everyone in between — across OAU and the city.
           </p>
           <div class="footer-social">
-            <a class="social-icon" href="#">𝕏</a>
-            <a class="social-icon" href="#">in</a>
-            <a class="social-icon" href="#">ig</a>
-            <a class="social-icon" href="#">wa</a>
+            <a class="social-icon" href="#" aria-label="X (Twitter)">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a class="social-icon" href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="social-icon" href="https://wa.me/2348000000000" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a class="social-icon" href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
           </div>
         </div>
+
         <div class="footer-col">
           <h4>Product</h4>
           <ul class="footer-links">
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Safety</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#coverage">Coverage</a></li>
+            <li><a href="#download">Get the App</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Drivers</h4>
           <ul class="footer-links">
-            <li><a href="#">Become a Driver</a></li>
-            <li><a href="#">Earnings</a></li>
-            <li><a href="#">Driver App</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="#driver">Become a Driver</a></li>
+            <li><a href="#driver">Earnings</a></li>
+            <li><a href="contact.html">Driver Support</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="#">About Rydex</a></li>
-            <li><a href="#">Coverage</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="about.html">About Rydex</a></li>
+            <li><a href="contact.html">Contact & Support</a></li>
+            <li><a href="#coverage">Service Areas</a></li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>
-          © 2025 Rydex Technologies. All rights reserved. Ile-Ife, Osun State,
-          Nigeria.
+        <p class="footer-copy">
+          © 2025 Rydex Technologies. All rights reserved.
         </p>
-        <p style="color: rgba(255, 255, 255, 0.2)">
-          © 2025 Rydex Technologies · Ile-Ife, Osun State, Nigeria · Built with
-          ❤️
-        </p>
+        <p class="footer-loc">Ile-Ife, Osun State, Nigeria</p>
       </div>
-    </footer> -->
-
-    <footer>
-      <a href="rydex.html" class="footer-logo-wrap">
-        <img src="./image/logo.png" class="logo" alt="" />
-      </a>
-
-      <p class="footer-copy">© 2025 Rydex Technologies · Ile-Ife, Nigeria</p>
     </footer>
     <script src="index.js"></script>
   </body>

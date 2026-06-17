@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Support – Rydex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" type="image/png" href="./image/Favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <img src="./image/logo.png" class="logo" alt="Rydex" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#how">How It Works</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#driver">Drive</a></li>
+        <li><a href="index.html#coverage">Coverage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-btn">
+        <a href="index.html" class="about-txt">Home</a>
+        <a href="index.html#download" class="nav-cta">Get the App</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+      <div class="contact-hero-bg"></div>
+      <div class="contact-hero-content">
+        <div class="eyebrow">Contact & Support</div>
+        <h1>We're here to <em>help.</em></h1>
+        <p class="contact-hero-sub">
+          Question about a ride, your account, or driving with Rydex? Reach out
+          through any channel below, or send us a message — our Ile-Ife support
+          team typically replies within a few hours.
+        </p>
+      </div>
+    </section>
+
+    <!-- MAIN -->
+    <div class="contact-main">
+      <!-- Support channels -->
+      <div class="channels">
+        <a
+          class="channel reveal"
+          href="https://wa.me/2348000000000"
+          target="_blank"
+          rel="noopener"
+        >
+          <div class="channel-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp Support</h4>
+            <p>
+              Fastest way to reach us.
+              <span class="channel-value">+234 800 000 0000</span>
+            </p>
+          </div>
+        </a>
+        <a class="channel reveal" href="mailto:support@rydex.app">
+          <div class="channel-icon"><i class="fa-regular fa-envelope"></i></div>
+          <div>
+            <h4>Email Us</h4>
+            <p>
+              For accounts, billing & disputes.
+              <span class="channel-value">support@rydex.app</span>
+            </p>
+          </div>
+        </a>
+        <a class="channel reveal" href="tel:+2348000000000">
+          <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <h4>Call the Hotline</h4>
+            <p>
+              Daily, 7am – 11pm.
+              <span class="channel-value">+234 800 000 0000</span>
+            </p>
+          </div>
+        </a>
+        <div class="channel reveal" style="cursor: default">
+          <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h4>Visit Us</h4>
+            <p>Rydex Technologies, Ile-Ife, Osun State, Nigeria.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="contact-form-wrap reveal">
+        <h2>Send us a message</h2>
+        <p class="form-sub">
+          Fill in the form and we'll get back to you as soon as possible.
+        </p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="topic">What do you need help with?</label>
+            <select id="topic" name="topic">
+              <option value="ride">A ride issue</option>
+              <option value="account">My account</option>
+              <option value="payment">Payment & fares</option>
+              <option value="driver">Driving with Rydex</option>
+              <option value="safety">Safety concern</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us what's going on..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message →</button>
+          <div class="form-success" id="formSuccess">
+            ✓ Thanks! Your message has been received — we'll be in touch soon.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2 class="reveal">Quick answers</h2>
+      <div class="faq-item reveal">
+        <h4>How fast will I get a response?</h4>
+        <p>
+          WhatsApp and the hotline are usually answered within minutes during
+          operating hours. Email replies typically arrive within a few hours.
+        </p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>I left something in a Rydex car. What do I do?</h4>
+        <p>
+          Message us on WhatsApp with your trip details and a description of the
+          item. We'll connect you with your driver to arrange a return.
+        </p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>How do I report a safety concern?</h4>
+        <p>
+          Choose "Safety concern" in the form above or call the hotline
+          directly. Safety reports are prioritised and handled confidentially.
+        </p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>I want to drive with Rydex. Where do I sign up?</h4>
+        <p>
+          Head to the <a href="index.html#driver" style="color: var(--green-accent)">Become a Driver</a>
+          section on our homepage to start your application.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <a href="index.html" class="footer-logo-wrap">
+        <img src="./image/logo.png" class="logo" alt="Rydex" />
+      </a>
+      <p class="footer-copy">© 2025 Rydex Technologies · Ile-Ife, Nigeria</p>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

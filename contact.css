@@ -114,6 +114,11 @@ nav {
   box-shadow: 0 6px 20px rgba(255, 224, 53, 0.35);
 }
 
+/* "Get the App" inside the mobile drawer — hidden on desktop */
+.nav-drawer-cta {
+  display: none;
+}
+
 /* Hamburger toggle (mobile only) */
 .nav-toggle {
   display: none;
@@ -524,9 +529,8 @@ nav {
   .nav-toggle {
     display: flex;
   }
-  .nav-cta {
-    padding: 0.5rem 1.1rem;
-    font-size: 0.68rem;
+  .nav-btn .nav-cta {
+    display: none;
   }
   nav .nav-links {
     position: absolute;
@@ -565,6 +569,17 @@ nav {
     border-bottom: 1px solid var(--border);
   }
   nav .nav-links li:last-child a {
+    border-bottom: none;
+  }
+  .nav-drawer-cta {
+    display: block;
+    margin-top: 1rem;
+  }
+  .nav-drawer-cta .nav-cta {
+    display: block;
+    text-align: center;
+    padding: 0.95rem;
+    font-size: 0.8rem;
     border-bottom: none;
   }
   .footer-grid {

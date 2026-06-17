@@ -942,12 +942,14 @@ section {
     display: block;
     margin-top: 1rem;
   }
-  .nav-drawer-cta .nav-cta {
+  .nav-drawer-cta .nav-cta,
+  .nav-drawer-cta .nav-cta:hover {
     display: block;
     text-align: center;
     padding: 0.95rem;
     font-size: 0.8rem;
     border-bottom: none;
+    color: var(--black);
   }
 }
 @media (max-width: 600px) {

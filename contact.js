@@ -13,6 +13,25 @@ const obs = new IntersectionObserver(
 );
 els.forEach((el) => obs.observe(el));
 
+// Mobile menu toggle
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+if (navToggle && navLinks) {
+  const closeMenu = () => {
+    navLinks.classList.remove("open");
+    navToggle.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  };
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    navToggle.classList.toggle("open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+  navLinks.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", closeMenu);
+  });
+}
+
 // Contact form (front-end only — no backend wired yet)
 const form = document.getElementById("contactForm");
 const success = document.getElementById("formSuccess");

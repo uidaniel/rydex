@@ -19,11 +19,12 @@
   </head>
   <body>
     <!-- NAV -->
-    <nav>
+    <nav id="navbar">
       <a href="index.html" class="nav-logo">
         <img src="./image/logo.png" class="logo" alt="Rydex" />
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
         <li><a href="index.html#how">How It Works</a></li>
         <li><a href="index.html#features">Features</a></li>
         <li><a href="index.html#driver">Drive</a></li>
@@ -32,8 +33,16 @@
         <li><a href="#" class="active">Contact</a></li>
       </ul>
       <div class="nav-btn">
-        <a href="index.html" class="about-txt">Home</a>
         <a href="index.html#download" class="nav-cta">Get the App</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
 
